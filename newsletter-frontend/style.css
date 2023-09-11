@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@1,700&family=Architects+Daughter&family=Crete+Round&family=Julee&family=Kablammo&family=Lobster&family=Pacifico&family=Syne+Mono&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color:hsl(234, 29%, 20%);
+}
+.nwslet{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    width: 70%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 25px;
+    font-family: 'Syne Mono';
+}
+.success{
+    background-color: hsl(0, 0%, 100%);
+    width: 20%;
+    padding: 0 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    font-family: 'Syne Mono';
+}
+h1{
+    text-align: center;
+    font-weight: 400;
+}
+
+.subscribe{
+    width: 70%;
+    margin: 100px;
+    font-size: 16px;
+    font-weight: 700;
+    color: hsl(235, 18%, 26%);
+}
+.image{
+    margin: 20px;
+    width: 40rem;
+    height: 593px;
+    background-image: url('illustration-sign-up-desktop.svg');
+    background-repeat: no-repeat;
+    background-position: center left;
+    background-size: cover;
+    border-radius: 20px;
+}
+.ben{
+    margin-bottom: 30px;
+}
+.benfit{
+    display: flex;
+    align-items: center;
+}
+.t{
+    padding-right: 12px;
+}
+.email{
+    margin-top: 18px;
+}
+label{
+    margin: 12px 0;
+}
+input{
+    padding: 15px;
+    border-radius: 8px;
+    border: .5px solid hsl(231, 7%, 60%);
+    width: 100%;
+}
+button{
+    background-color: hsl(234, 29%, 20%);
+    color: white;
+    margin: 15px 0;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: 700;
+}
+.labels{
+    display: flex;
+    justify-content: space-between;
+}
+#err{
+   color: hsl(4, 100%, 67%);
+}
+
+.icon{
+    margin: 15px;
+    padding: 8px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 1440px){
+    .nwslet{
+        height: 100%;
+        width: 100%;
+        border-radius: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-50% , -50%);
+    }
+    .image{
+        margin: 0;
+        width: 100%;
+        background-image: url('illustration-sign-up-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-size: cover;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .subscribe {
+        position: absolute;
+        top: 35%;
+    }
+}
